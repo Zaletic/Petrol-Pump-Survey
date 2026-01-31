@@ -439,6 +439,144 @@
             line-height: 1.6;
             margin-bottom: 12px;
         }
+
+        /* =========================
+   MOBILE RESPONSIVENESS FIX
+   ========================= */
+
+/* Global text scaling for small screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 30px 16px;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+}
+
+/* Header & Navigation */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 16px;
+    }
+
+    nav ul {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+}
+
+/* Hero Section */
+@media (max-width: 768px) {
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-metrics {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .metric-card .number {
+        font-size: 28px;
+    }
+}
+
+/* Section Headings */
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    section h3 {
+        font-size: 16px;
+    }
+
+    .section-number {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 14px;
+    }
+}
+
+/* Metric grids */
+@media (max-width: 768px) {
+    .metric-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .metric-box .number {
+        font-size: 22px;
+    }
+}
+
+/* Cards (persona, direction, recommendation) */
+@media (max-width: 768px) {
+    .persona-card,
+    .direction-card,
+    .recommendation {
+        padding: 20px;
+    }
+}
+
+/* Tables */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+    }
+}
+
+/* Charts */
+@media (max-width: 768px) {
+    .chart-container {
+        margin: 25px 0;
+    }
+
+    .chart-caption {
+        font-size: 12px;
+    }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+    footer {
+        padding: 25px 16px;
+        font-size: 12px;
+    }
+}
+
     </style>
 </head>
 <body>
